@@ -5,7 +5,6 @@ function ContentPage(props) {
     const [article, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
     const updateNews = async () => {
-        setLoading(true);
         const url = `https://inshortsv2.vercel.app/news?type=${props.category}&limit=100`;
         let data = await fetch(url);
         let parsedData = await data.json();
