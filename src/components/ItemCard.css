@@ -24,11 +24,12 @@
     position: relative;
     left: 20px;
     width: 100%;
+    padding-bottom: 20px;
     background-color: #ffffff;
 }
 
 .cardimg {
-    width: 40vw;
+    width: 35vw;
     height: 20vw;
     object-fit: cover;
     border-radius: 10px;
@@ -38,10 +39,31 @@
     box-shadow: 5px 5px 8px 2px #eeeeee
 }
 
+@media screen and (max-width: 993px) {
+    .cardimg {
+        width: 40vw;
+        height: 35vw;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .cardimg {
-        width: 80vw;
-        height: 60vw;
+        width: 30vw;
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .cardimg {
+        width: 35vw;
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cardimg {
+        width: 60vw;
+        height: 50vw;
     }
 
     .description {
@@ -51,5 +73,12 @@
     .btn-orange {
         bottom: 50px;
         right: 10px
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .cardimg {
+        width: 80vw;
+        height: 60vw;
     }
 }

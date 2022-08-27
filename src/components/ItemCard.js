@@ -19,10 +19,12 @@ function ItemCard(props) {
                         fontSize: "80%",
                         color: "#8a8d91",
                         position: "absolute",
-                        bottom: "10px",
+                        bottom: "0px",
                     }}
                 >
-                    by {props.author_name} from {props.source_name}
+                    by {props.author_name}
+                    <br />
+                    {props.source_name}
                 </p>
             </div>
         </div>
