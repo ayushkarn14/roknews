@@ -1,0 +1,55 @@
+.btn-orange {
+    background: #fc4a1a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fa7704, #fc4a1a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fa7704, #fc4a1a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px
+}
+
+.btn-orange:hover {
+    box-shadow: 0px 0px 5px 2px #fa7704;
+    color: rgb(255, 255, 255);
+}
+
+.itemcard {
+    box-shadow: 5px 5px 8px 2px #d9d9d9;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.cardimg {
+    width: 40vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    box-shadow: 5px 5px 8px 2px #eeeeee
+}
+
+@media screen and (max-width: 992px) {
+    .cardimg {
+        width: 80vw;
+        height: auto;
+    }
+
+    .description {
+        margin-bottom: 80px;
+    }
+
+    .btn-orange {
+        bottom: 50px;
+        right: 10px
+    }
+}
