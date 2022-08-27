@@ -41,7 +41,7 @@
 @media screen and (max-width: 992px) {
     .cardimg {
         width: 80vw;
-        height: auto;
+        height: 60vw;
     }
 
     .description {
