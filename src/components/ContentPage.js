@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ItemCard from "./ItemCard";
 import Loader from "./loader";
+import "./ContentPage.css";
 function ContentPage(props) {
     const [article, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ function ContentPage(props) {
     });
     return (
         <div
-            className="container d-flex justify-content-around my-5 row"
+            className="container mycontainer d-flex justify-content-around my-5 row"
             key="1"
         >
             {article.map((element) => {

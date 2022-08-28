@@ -1,4 +1,4 @@
-This project is hostel at [roknews.netlify.app](https://roknews.netlify.app/)
+This project is hosted at [roknews.netlify.app](https://roknews.netlify.app/)
 
 # Getting Started with Create React App
 

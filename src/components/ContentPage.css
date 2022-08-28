@@ -1,0 +1,9 @@
+@media screen and (max-width: 576px) {
+    .mycontainer {
+        padding: 0px;
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 90vw;
+    }
+}
