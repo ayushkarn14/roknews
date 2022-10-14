@@ -6,10 +6,11 @@ function ContentPage(props) {
     const [article, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
     const updateNews = async () => {
-        const url = `https://inshortsv2.vercel.app/news?type=${props.category}&limit=100`;
+        // const url = `https://inshortsv2.vercel.app/news?type=${props.category}&limit=100`;
+        const url = `https://inshorts.me/news/${props.category}?limit=100`;
         let data = await fetch(url);
         let parsedData = await data.json();
-        setArticles(parsedData.articles);
+        setArticles(parsedData.data.articles);
         setLoading(false);
     };
 
@@ -23,15 +24,14 @@ function ContentPage(props) {
         >
             {article.map((element) => {
                 return (
-                    <div className="col-md-12" key={element.source_url}>
+                    <div className="col-md-12" key={element.sourceUrl}>
                         <ItemCard
                             title={element.title}
-                            image_url={element.image_url}
-                            description={element.description}
-                            source_url={element.source_url}
-                            author_name={element.author_name}
-                            source_name={element.source_name}
-                            created_at={element.created_at}
+                            image_url={element.imageUrl}
+                            description={element.content}
+                            source_url={element.sourceUrl}
+                            author_name={element.authorName}
+                            source_name={element.sourceName}
                         />
                     </div>
                 );
