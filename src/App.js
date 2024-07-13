@@ -18,49 +18,49 @@ function App() {
                         <Route
                             path="/india"
                             element={
-                                <ContentPage key="3" category="topics/national" />
+                                <ContentPage key="3" category="national" />
                             }
                         />
                         <Route
                             path="/business"
                             element={
-                                <ContentPage key="4" category="topics/business" />
+                                <ContentPage key="4" category="business" />
                             }
                         />
                         <Route
                             path="/sports"
-                            element={<ContentPage key="5" category="topics/sports" />}
+                            element={<ContentPage key="5" category="sports" />}
                         />
                         <Route
                             path="/world"
-                            element={<ContentPage key="6" category="topics/world" />}
+                            element={<ContentPage key="6" category="world" />}
                         />
                         <Route
                             path="politics"
                             element={
-                                <ContentPage key="7" category="topics/politics" />
+                                <ContentPage key="7" category="politics" />
                             }
                         />
                         <Route
                             path="tech"
                             element={
-                                <ContentPage key="8" category="topics/technology" />
+                                <ContentPage key="8" category="technology" />
                             }
                         />
                         <Route
                             path="/startup"
-                            element={<ContentPage key="9" category="topics/startup" />}
+                            element={<ContentPage key="9" category="startup" />}
                         />
                         <Route
                             path="science"
                             element={
-                                <ContentPage key="10" category="topics/science" />
+                                <ContentPage key="10" category="science" />
                             }
                         />
                         <Route
                             path="automobile"
                             element={
-                                <ContentPage key="11" category="topics/automobile" />
+                                <ContentPage key="11" category="automobile" />
                             }
                         />
                     </Routes>

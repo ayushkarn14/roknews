@@ -7,10 +7,12 @@ function ContentPage(props) {
     const [loading, setLoading] = useState(true);
     const updateNews = async () => {
         // const url = `https://inshortsv2.vercel.app/news?type=${props.category}&limit=100`;
-        const url = `https://inshorts.me/news/${props.category}?limit=100`;
+        // const url = `https://inshorts.me/news/${props.category}?limit=100`;
+        const url = `https://inshortsapi.vercel.app/news?category=${props.category}`;
         let data = await fetch(url);
         let parsedData = await data.json();
-        setArticles(parsedData.data.articles);
+        // setArticles(parsedData.data.articles);
+        setArticles(parsedData.data);
         setLoading(false);
     };
 
@@ -29,9 +31,10 @@ function ContentPage(props) {
                             title={element.title}
                             image_url={element.imageUrl}
                             description={element.content}
-                            source_url={element.sourceUrl}
-                            author_name={element.authorName}
-                            source_name={element.sourceName}
+                            source_url={element.readMoreUrl}
+                            author_name={element.author}
+                            // source_name={element.sourceName}
+                            date={element.date}
                         />
                     </div>
                 );

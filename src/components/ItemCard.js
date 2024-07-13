@@ -24,7 +24,8 @@ function ItemCard(props) {
                 >
                     by {props.author_name}
                     <br />
-                    {props.source_name}
+                    {/* {props.source_name} */}
+                    {props.date}
                 </p>
             </div>
         </div>
